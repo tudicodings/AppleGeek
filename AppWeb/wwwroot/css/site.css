@@ -1,0 +1,175 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url(https://media.idownloadblog.com/wp-content/uploads/2023/10/M3-MacBook-Pro-Wallpaper-8K.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.back-about{
+  background-image: url(https://applescoop.org/image/wallpapers/mac/macbook-pro-m3-blue-stock-default-12-10-2024-1728792459-hd-wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.back-product{
+  background-image: url(https://i.pinimg.com/originals/3f/3a/ba/3f3aba6e31c5c043307fd62899add1c4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.back-privacy{
+  background-image: url(https://applescoop.org/image/wallpapers/mac/apple-m3-macbook-pro-default-modified-11-10-2024-1728714492-hd-wallpaper.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.font-main{
+  color: white;
+  font-size: 30px;;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.text-jos{
+  position: absolute;
+  bottom: 70px;
+  left: 200px;
+  font-size: 20px;
+  color: darkblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.margine-jos{
+  background-color: white;
+  opacity: 0.5;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-link{
+  color: blue;
+  text-decoration: none;
+}
+
+.custom-link:hover{
+  color:green;
+}
+
+.titlu-main{
+  font-size: 7rem;
+  font-weight: bold;
+  color: whitesmoke
+}
+
+.flip-container-wrapper {
+  display: flex; /* Activează flexbox pentru a alinia elementele orizontal */
+  justify-content: space-between; /* Creează spațiu între elementele din container */
+  gap: 20px; /* Spațiu între fiecare element */
+}
+
+.flip-container {
+  justify-content: space-between;
+  perspective: 1000px; /* Creează un efect de adâncire */
+  width: 300px; /* Lățimea containerului */
+  height: 300px; /* Înălțimea containerului */
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Permite rotirea 3D */
+  transition: transform 0.6s; /* Adaugă o tranziție pentru efectul de flip */
+}
+
+/* Fața imaginii */
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 40%; /* Ascunde spatele când se rotește */
+}
+
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40%; /* Asigură că imaginea ocupă tot spațiul */
+}
+
+/* Spatele imaginii */
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Culoare de fundal pentru spatele imaginii */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backface-visibility: hidden; /* Ascunde fața când se rotește */
+  transform: rotateY(180deg);
+  border-radius: 40%; /* Rotește spatele la 180 de grade */
+}
+
+/* Efectul de flip la hover */
+.flip-container:hover .flipper {
+  transform: rotateY(180deg); /* Rotește imaginea la 180 de grade când dai cu cursorul pe ea */
+}
+
+.icon-navbar{
+  right: 15px;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.benchimac{
+  background-color: rgba(0, 0, 0, 0.7); /* Fundal semi-transparent */
+  padding: 30px; /* Spațiu interior */
+  border-radius: 70px; /* Colțuri rotunjite */
+}
